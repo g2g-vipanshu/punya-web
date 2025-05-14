@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
@@ -11,9 +12,9 @@ const Header = () => {
         <header>
             <nav className="flex items-center justify-between px-6 py-4 bg-white shadow-md fixed top-0 left-0 w-full z-50">
                 <div>
-                    <a href="/">
-                        <img className="h-8 cursor-pointer" src="/images/PDLogo1.png" alt="Logo" />
-                    </a>
+                    <Link href="/">
+                        <Image className="h-8 cursor-pointer" src="/images/PDLogo1.png" alt="Logo" />
+                    </Link>
                 </div>
                 <ul className="flex space-x-6 text-gray-800 font-medium">
                     <li>

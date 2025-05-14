@@ -151,13 +151,13 @@ const MainSection = () => {
                     <div className="bg-white/90 shadow-2xl rounded-lg p-8 sm:p-10 max-w-2xl">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Our Brand. Your Confidence.</h2>
                         <p className="text-gray-700 mb-5 font-bold text-sm sm:text-base">
-                            Punnyadhara is a new age D2C Tech brand that is revolutionising India's beverages industry! We are India's first branded packaged drinking water mass distributed directly to customers at cost of bottling through multiple points of sale.
+                            Punnyadhara is a new age D2C Tech brand that is revolutionising India&apos;s beverages industry! We are India&apos;s first branded packaged drinking water mass distributed directly to customers at cost of bottling through multiple points of sale.
                         </p>
                         <p className="text-gray-700 mb-5">
-                            Punnyadhara is disrupting India's beverage industry by offering safe, packaged drinking water at just ₹3 - 40% cheaper than market rates. By eliminating middlemen and selling directly through our own vending machines and carts in highfootfall areas like metro stations, universities and hospitals across Delhi NCR, we ensure clean water is accessible and affordable for all.
+                            Punnyadhara is disrupting India&apos;s beverage industry by offering safe, packaged drinking water at just ₹3 - 40% cheaper than market rates. By eliminating middlemen and selling directly through our own vending machines and carts in highfootfall areas like metro stations, universities and hospitals across Delhi NCR, we ensure clean water is accessible and affordable for all.
                         </p>
                         <p className="text-gray-700">
-                            We believe water is a necessity, not a privilege. Our mission goes beyond affordability - we're building a sustainable ecosystem by collecting, crushing, and recycling PET bottles, while sparking a social movement to make Punnyadhara the most trusted and loved water brand in India.
+                            We believe water is a necessity, not a privilege. Our mission goes beyond affordability - we&apos;re building a sustainable ecosystem by collecting, crushing, and recycling PET bottles, while sparking a social movement to make Punnyadhara the most trusted and loved water brand in India.
                         </p>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ const MainSection = () => {
                         {[1, 2, 3].map((i) => (
                             <div key={i} className="flex-shrink-0 w-72 flex flex-col items-center text-left">
                                 <div className="w-60 h-60 flex items-center justify-center bg-gradient-to-b from-[#fff7dc] to-[#ffd680] rounded-t-lg">
-                                    <img
+                                    <Image
                                         src={`/images/product${i}.png`}
                                         alt={`Product ${i}`}
                                         className="w-60 h-60 object-contain mb-10"
@@ -200,7 +200,7 @@ const MainSection = () => {
                         {[1, 2, 3].map((i) => (
                             <div key={i} className="flex flex-col items-center text-left">
                                 <div className="w-60 h-60 flex items-center justify-center bg-gradient-to-b from-[#fff7dc] to-[#ffd680] rounded-t-lg">
-                                    <img
+                                    <Image
                                         src={`/images/product${i}.png`}
                                         alt={`Product ${i}`}
                                         className="w-64 h-64 object-contain mb-10"
@@ -229,7 +229,7 @@ const MainSection = () => {
                 <div className="max-w-none flex flex-col md:flex-row gap-16">
                     {/* Left Image Card */}
                     <div className="relative w-full md:w-1/2 overflow rounded-none shadow-lg">
-                        <img
+                        <Image
                             src="/images/Water2.jpg"
                             alt="Left Image"
                             className="w-full h-96 object-cover"
@@ -244,7 +244,7 @@ const MainSection = () => {
 
                     {/* Right Image Card */}
                     <div className="relative w-full md:w-1/2 overflow rounded-none shadow-lg">
-                        <img
+                        <Image
                             src="/images/Water3.jpg"
                             alt="Right Image"
                             className="w-full h-96 object-cover"
@@ -261,7 +261,7 @@ const MainSection = () => {
 
             {/* Image */}
             <div className="mt-16 sm:mt-20">
-                <img
+                <Image
                     src="/images/waterSplash.png"
                     alt="Full Width Banner"
                     className="w-full h-96 object-cover"
@@ -280,13 +280,13 @@ const MainSection = () => {
                             We believe water is a fundamental right, not a privilege. Access to clean, safe drinking water improves health, empowers communities, and enhances daily life.
                         </p>
                         <p className="text-gray-600">
-                            At Punnyadhara, we're changing this. By offering packaged drinking water at cost, we ensure everyone has access to safe hydration. Through our direct distribution network of vending machines and carts, we make clean water available where it's needed most-convenient, affordable and sustainable.
+                            At Punnyadhara, we&apos;re changing this. By offering packaged drinking water at cost, we ensure everyone has access to safe hydration. Through our direct distribution network of vending machines and carts, we make clean water available where it&apos;s needed most-convenient, affordable and sustainable.
                         </p>
                     </div>
 
                     {/* Right Image */}
                     <div className="md:w-1/2">
-                        <img
+                        <Image
                             src="/images/drinkingWater.jpeg"
                             alt="Why Choose Us"
                             className="w-full h-auto shadow-md"
@@ -308,7 +308,7 @@ const MainSection = () => {
                         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-3">
                             {/* Card 1 */}
                             <div className="relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
-                                <img
+                                <Image
                                     src="/images/card1.jpg"
                                     alt="Card One"
                                     className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -323,7 +323,7 @@ const MainSection = () => {
                             </div>
                             {/* Card 2 */}
                             <div className="relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
-                                <img
+                                <Image
                                     src="/images/card2.png"
                                     alt="Card Two"
                                     className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -331,12 +331,12 @@ const MainSection = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                                 <div className="absolute bottom-4 left-4 text-white z-10">
                                     <h3 className="text-2xl font-semibold">10+ Locations</h3>
-                                    <p className="text-sm">we are ensuring easy access to safe drinking water where it's needed most.</p>
+                                    <p className="text-sm">we are ensuring easy access to safe drinking water where it&apos;s needed most.</p>
                                 </div>
                             </div>
                             {/* Card 3 */}
                             <div className="relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
-                                <img
+                                <Image
                                     src="/images/card3.jpeg"
                                     alt="Card Three"
                                     className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -365,7 +365,7 @@ const MainSection = () => {
                         {products.map((product) => (
                             <div key={product.id} className="flex-shrink-0 w-72 flex flex-col items-center text-left">
                                 <div className="bg-gradient-to-b from-[#fff7dc] to-[#ffd680] w-60 h-60 flex items-center justify-center rounded-t-lg">
-                                    <img
+                                    <Image
                                         src={product.image}
                                         alt={product.name}
                                         className="w-56 h-56 object-contain mb-10"
@@ -387,7 +387,7 @@ const MainSection = () => {
                         {products.map((product) => (
                             <div key={product.id} className="flex flex-col items-center text-left">
                                 <div className="bg-gradient-to-b from-[#fff7dc] to-[#ffd680] w-60 h-60 flex items-center justify-center rounded-t-lg">
-                                    <img
+                                    <Image
                                         src={product.image}
                                         alt={product.name}
                                         className="w-56 h-56 object-contain mb-10"
@@ -418,7 +418,7 @@ const MainSection = () => {
                             </p>
                         </div>
                         <div className="w-full md:w-1/2 h-64 md:h-auto relative">
-                            <img src="/images/Water4.png" alt="Top Left" className="w-full h-full object-cover" />
+                            <Image src="/images/Water4.png" alt="Top Left" className="w-full h-full object-cover" />
                             <div className="absolute -top-12 left-6 w-24 h-24 sm:w-36 sm:h-36 bg-[var(--primary-blue)] rounded-full flex flex-col items-center justify-center shadow-xl text-white text-center p-3">
                                 <h3 className="text-2xl sm:text-4xl font-bold">90+</h3>
                                 <p className="text-sm sm:text-md">Quality Tests</p>
@@ -434,7 +434,7 @@ const MainSection = () => {
                             </p>
                         </div>
                         <div className="w-full md:w-1/2">
-                            <img src="/images/rightSectionImage1.jpg" alt="Bottom Right" className="w-full h-full object-cover" />
+                            <Image src="/images/rightSectionImage1.jpg" alt="Bottom Right" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>
@@ -503,7 +503,7 @@ const MainSection = () => {
             <section className="flex flex-col md:flex-row items-stretch py-12 w-full mx-auto gap-8">
                 {/* Left Image */}
                 <div className="md:w-1/4 w-full">
-                    <img
+                    <Image
                         src="/images/Recycle.jpg"
                         alt="Left Visual"
                         className="h-full w-full object-cover rounded-r-lg"
@@ -518,19 +518,19 @@ const MainSection = () => {
                     </p>
                     <div className="flex flex-col gap-4 text-left">
                         <div className="flex items-start gap-3">
-                            <img src="/images/Icon1.svg" alt="" className="mt-1" />
+                            <Image src="/images/Icon1.svg" alt="" className="mt-1" />
                             <p className="text-gray-700 font-medium">
                                 All our vending carts and machines are equipped with plastic bottle crushing machines. The bottles are crushed and transported to the recycle plant.
                             </p>
                         </div>
                         <div className="flex items-start gap-3">
-                            <img src="/images/Icon2.svg" alt="" className="mt-1" />
+                            <Image src="/images/Icon2.svg" alt="" className="mt-1" />
                             <p className="text-gray-700 font-medium">
                                 Punnyadhara also incentives all customers to recycle any and all plastic bottles upto size of one litre through its vending carts and machines.
                             </p>
                         </div>
                         <div className="flex items-start gap-3">
-                            <img src="/images/Icon3.svg" alt="" className="mt-1" />
+                            <Image src="/images/Icon3.svg" alt="" className="mt-1" />
                             <p className="text-gray-700 font-medium">
                                 Our company policy is to recycle atleast the same quantity of bottles we sell to our customers.
                             </p>
@@ -540,7 +540,7 @@ const MainSection = () => {
 
                 {/* Right Image */}
                 <div className="md:w-1/4 w-full flex justify-center sm:justify-end items-center">
-                    <img
+                    <Image
                         src="/images/Recycle2.jpg"
                         alt="Right Visual"
                         className="w-full h-80 object-cover rounded-l-lg"
@@ -554,12 +554,12 @@ const MainSection = () => {
                 <h2 className="text-3xl font-bold text-center mb-10">Our Certifications</h2>
                 <div className="carousel-container mx-auto overflow-hidden">
                     <div className="carousel-track">
-                        <img src="/images/cert1.webp" alt="Cert 1" className="carousel-item" />
-                        <img src="/images/cert2.webp" alt="Cert 2" className="carousel-item" />
-                        <img src="/images/cert3.png" alt="Cert 3" className="carousel-item" />
-                        <img src="/images/cert4.webp" alt="Cert 4" className="carousel-item" />
-                        <img src="/images/cert5.png" alt="Cert 5" className="carousel-item" />
-                        <img src="/images/cert6.png" alt="Cert 6" className="carousel-item" />
+                        <Image src="/images/cert1.webp" alt="Cert 1" className="carousel-item" />
+                        <Image src="/images/cert2.webp" alt="Cert 2" className="carousel-item" />
+                        <Image src="/images/cert3.png" alt="Cert 3" className="carousel-item" />
+                        <Image src="/images/cert4.webp" alt="Cert 4" className="carousel-item" />
+                        <Image src="/images/cert5.png" alt="Cert 5" className="carousel-item" />
+                        <Image src="/images/cert6.png" alt="Cert 6" className="carousel-item" />
                     </div>
                 </div>
             </section>
@@ -606,7 +606,7 @@ const MainSection = () => {
             <section className="relative w-full bg-white py-20">
                 <div className="flex flex-col md:flex-row items-start relative">
                     <div className="md:w-2/3 w-full relative z-0">
-                        <img
+                        <Image
                             src="/images/Glass-water.jpeg"
                             alt="Illustration"
                             className="w-full h-[500px] object-cover shadow-2xl"

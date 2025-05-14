@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 
-export default function contact() {
+export default function Contact() {
     const [formData, setFormData] = useState({
         first_name: '',
         last_name: '',

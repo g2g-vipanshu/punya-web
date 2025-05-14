@@ -1,3 +1,4 @@
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -9,10 +10,10 @@ export default function Footer() {
                             {/* Logo and About */}
                             <div className="mt-10 text-center md:text-left">
                                 <h2 className="text-2xl font-bold mb-3 flex justify-center md:justify-start">
-                                    <img className="h-8" src="/images/PDLogo2.png" alt="Logo" />
+                                    <Image className="h-8" src="/images/PDLogo2.png" alt="Logo" />
                                 </h2>
                                 <p className="text-sm mb-4">
-                                    Punnyadhara is India's first branded packaged drinking water mass distributed directly to customers at cost of bottle through multiple point of sale.
+                                    Punnyadhara is India&apos;s first branded packaged drinking water mass distributed directly to customers at cost of bottle through multiple point of sale.
                                 </p>
                                 <div className="flex justify-center md:justify-start items-center space-x-4 mt-4">
                                     <span className="text-sm">Follow us:</span>
