@@ -174,15 +174,16 @@ const MainSection = () => {
                         {[1, 2, 3].map((i) => (
                             <div key={i} className="flex-shrink-0 w-72 flex flex-col items-center text-left">
                                 <div className="w-60 h-60 flex items-center justify-center bg-gradient-to-b from-[#fff7dc] to-[#ffd680] rounded-t-lg">
-                                    <Image
-                                        height={60}
-                                        width={130}
-                                        src={`/images/product${i}.png`}
-                                        alt={`Product ${i}`}
-                                        className="object-contain mb-10"
-                                    />
+                                    <div className="relative w-36 h-48">
+                                        <Image
+                                            src={`/images/product${i}.png`}
+                                            alt={`Product ${i}`}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="w-60">
+                                <div className="w-60 mt-4">
                                     <h3 className="font-bold text-gray-800 mb-1">
                                         {i === 3 ? 'Lemon' : 'Punnyadhara'}
                                     </h3>
@@ -202,15 +203,16 @@ const MainSection = () => {
                         {[1, 2, 3].map((i) => (
                             <div key={i} className="flex flex-col items-center text-left">
                                 <div className="w-60 h-60 flex items-center justify-center bg-gradient-to-b from-[#fff7dc] to-[#ffd680] rounded-t-lg">
-                                    <Image
-                                        height={256}
-                                        width={130}
-                                        src={`/images/product${i}.png`}
-                                        alt={`Product ${i}`}
-                                        className="object-contain mb-10"
-                                    />
+                                    <div className="relative w-36 h-48">
+                                        <Image
+                                            src={`/images/product${i}.png`}
+                                            alt={`Product ${i}`}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="w-60">
+                                <div className="w-60 mt-4">
                                     <h3 className="font-bold text-gray-800 mb-1">
                                         {i === 3 ? 'Lemon' : 'Punnyadhara'}
                                     </h3>
@@ -380,15 +382,16 @@ const MainSection = () => {
                         {products.map((product) => (
                             <div key={product.id} className="flex-shrink-0 w-72 flex flex-col items-center text-left">
                                 <div className="bg-gradient-to-b from-[#fff7dc] to-[#ffd680] w-60 h-60 flex items-center justify-center rounded-t-lg">
-                                    <Image
-                                        width={170}
-                                        height={170}
-                                        src={product.image}
-                                        alt={product.name}
-                                        className="object-contain mb-10"
-                                    />
+                                    <div className="relative w-36 h-48">
+                                        <Image
+                                            src={product.image}
+                                            alt={product.name}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="w-60">
+                                <div className="w-60 mt-4">
                                     <h3 className="font-bold text-gray-800 mb-1">{product.name}</h3>
                                     <p className="text-pink-600 font-semibold mb-4">{product.volume}</p>
                                     <button className="bg-white border-2 border-pink-700 text-pink-700 py-2 px-6 hover:bg-pink-50 transition w-full">
@@ -399,20 +402,22 @@ const MainSection = () => {
                         ))}
                     </div>
 
+
                     {/* Tablet/Desktop: Grid view */}
                     <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-8 px-4">
                         {products.map((product) => (
                             <div key={product.id} className="flex flex-col items-center text-left">
                                 <div className="bg-gradient-to-b from-[#fff7dc] to-[#ffd680] w-60 h-60 flex items-center justify-center rounded-t-lg">
-                                    <Image
-                                        width={170}
-                                        height={170}
-                                        src={product.image}
-                                        alt={product.name}
-                                        className="object-contain mb-10"
-                                    />
+                                    <div className="relative w-36 h-48">
+                                        <Image
+                                            src={product.image}
+                                            alt={product.name}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="w-60">
+                                <div className="w-60 mt-4">
                                     <h3 className="font-bold text-gray-800 mb-1">{product.name}</h3>
                                     <p className="text-pink-600 font-semibold mb-4">{product.volume}</p>
                                     <button className="bg-white border-2 border-pink-700 text-pink-700 py-2 px-6 hover:bg-pink-50 transition w-full">
@@ -606,6 +611,10 @@ const MainSection = () => {
                         <Image width={150} height={100} src="/images/cert4.webp" alt="Cert 4" className="carousel-item" />
                         <Image width={100} height={100} src="/images/cert5.png" alt="Cert 5" className="carousel-item" />
                         <Image width={100} height={100} src="/images/cert6.png" alt="Cert 6" className="carousel-item" />
+                        <Image width={150} height={100} src="/images/cert1.webp" alt="Cert 1" className="carousel-item" />
+                        <Image width={150} height={100} src="/images/cert2.webp" alt="Cert 2" className="carousel-item" />
+                        <Image width={150} height={100} src="/images/cert3.png" alt="Cert 3" className="carousel-item" />
+                        <Image width={150} height={100} src="/images/cert4.webp" alt="Cert 4" className="carousel-item" />
                     </div>
                 </div>
             </section>
