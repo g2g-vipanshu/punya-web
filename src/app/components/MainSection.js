@@ -145,7 +145,7 @@ const MainSection = () => {
             {/* Our Brand Section */}
             <section
                 className="relative w-full h-[100vh] md:h-[75vh] bg-cover bg-center mt-5"
-                style={{ backgroundImage: "url('/images/water1.png')" }}
+                style={{ backgroundImage: "url('/images/Water1.png')" }}
             >
                 <div className="relative z-10 flex items-center justify-end h-full px-6 sm:px-8 lg:px-16">
                     <div className="bg-white/90 shadow-2xl rounded-lg p-8 sm:p-10 max-w-2xl">
@@ -175,9 +175,11 @@ const MainSection = () => {
                             <div key={i} className="flex-shrink-0 w-72 flex flex-col items-center text-left">
                                 <div className="w-60 h-60 flex items-center justify-center bg-gradient-to-b from-[#fff7dc] to-[#ffd680] rounded-t-lg">
                                     <Image
+                                        height={60}
+                                        width={130}
                                         src={`/images/product${i}.png`}
                                         alt={`Product ${i}`}
-                                        className="w-60 h-60 object-contain mb-10"
+                                        className="object-contain mb-10"
                                     />
                                 </div>
                                 <div className="w-60">
@@ -201,9 +203,11 @@ const MainSection = () => {
                             <div key={i} className="flex flex-col items-center text-left">
                                 <div className="w-60 h-60 flex items-center justify-center bg-gradient-to-b from-[#fff7dc] to-[#ffd680] rounded-t-lg">
                                     <Image
+                                        height={256}
+                                        width={130}
                                         src={`/images/product${i}.png`}
                                         alt={`Product ${i}`}
-                                        className="w-64 h-64 object-contain mb-10"
+                                        className="object-contain mb-10"
                                     />
                                 </div>
                                 <div className="w-60">
@@ -228,12 +232,15 @@ const MainSection = () => {
             <section className="py-1 sm:py-1">
                 <div className="max-w-none flex flex-col md:flex-row gap-16">
                     {/* Left Image Card */}
-                    <div className="relative w-full md:w-1/2 overflow rounded-none shadow-lg">
-                        <Image
-                            src="/images/Water2.jpg"
-                            alt="Left Image"
-                            className="w-full h-96 object-cover"
-                        />
+                    <div className="relative w-full md:w-3/4 lg:w-2/3 xl:w-1/2 overflow shadow-lg">
+                        <div className="relative w-full h-[300px] sm:h-[400px]">
+                            <Image
+                                src="/images/Water2.jpg"
+                                alt="Left Image"
+                                fill
+                                className="object-cover rounded-none"
+                            />
+                        </div>
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 bg-white px-6 py-4 shadow-md w-11/12 sm:w-4/5 z-10">
                             <h3 className="text-xl font-bold text-gray-800 mb-2">Mission</h3>
                             <p className="text-gray-600 text-sm font-bold">
@@ -243,11 +250,12 @@ const MainSection = () => {
                     </div>
 
                     {/* Right Image Card */}
-                    <div className="relative w-full md:w-1/2 overflow rounded-none shadow-lg">
+                    <div className="relative w-full h-[300px] sm:h-[400px] md:w-1/2 overflow rounded-none shadow-lg">
                         <Image
+                            fill
                             src="/images/Water3.jpg"
                             alt="Right Image"
-                            className="w-full h-96 object-cover"
+                            className="object-cover"
                         />
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 bg-white px-6 py-4 shadow-md w-11/12 sm:w-4/5 z-10">
                             <h3 className="text-xl font-bold text-gray-800 mb-2">Vision</h3>
@@ -264,7 +272,9 @@ const MainSection = () => {
                 <Image
                     src="/images/waterSplash.png"
                     alt="Full Width Banner"
-                    className="w-full h-96 object-cover"
+                    width={1920}
+                    height={600}
+                    className="w-full h-auto object-cover"
                 />
             </div>
 
@@ -287,9 +297,11 @@ const MainSection = () => {
                     {/* Right Image */}
                     <div className="md:w-1/2">
                         <Image
+                            width={576}
+                            height={533}
                             src="/images/drinkingWater.jpeg"
                             alt="Why Choose Us"
-                            className="w-full h-auto shadow-md"
+                            className="shadow-md"
                         />
                     </div>
                 </div>
@@ -307,11 +319,12 @@ const MainSection = () => {
                         </div>
                         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-3">
                             {/* Card 1 */}
-                            <div className="relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                            <div className="aspect-square w-full relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                                 <Image
+                                    fill
                                     src="/images/card1.jpg"
                                     alt="Card One"
-                                    className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                    className="object-cover transform group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
                                 <div className="absolute bottom-6 left-6 text-white z-10">
@@ -322,11 +335,12 @@ const MainSection = () => {
                                 </div>
                             </div>
                             {/* Card 2 */}
-                            <div className="relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                            <div className="aspect-square w-full relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                                 <Image
+                                    fill
                                     src="/images/card2.png"
                                     alt="Card Two"
-                                    className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                    className="object-cover transform group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                                 <div className="absolute bottom-4 left-4 text-white z-10">
@@ -335,11 +349,12 @@ const MainSection = () => {
                                 </div>
                             </div>
                             {/* Card 3 */}
-                            <div className="relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                            <div className="aspect-square w-full relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                                 <Image
+                                    fill
                                     src="/images/card3.jpeg"
                                     alt="Card Three"
-                                    className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                    className="object-cover transform group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                                 <div className="absolute bottom-4 left-4 text-white">
@@ -354,7 +369,7 @@ const MainSection = () => {
 
 
             {/* Upcoming Launch Section */}
-            <section className="pt-[40rem] sm:py-20 px-4">
+            <section className="pt-[60rem] sm:py-20 px-4">
                 <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10">
                     Upcoming Launch
                 </h2>
@@ -366,9 +381,11 @@ const MainSection = () => {
                             <div key={product.id} className="flex-shrink-0 w-72 flex flex-col items-center text-left">
                                 <div className="bg-gradient-to-b from-[#fff7dc] to-[#ffd680] w-60 h-60 flex items-center justify-center rounded-t-lg">
                                     <Image
+                                        width={170}
+                                        height={170}
                                         src={product.image}
                                         alt={product.name}
-                                        className="w-56 h-56 object-contain mb-10"
+                                        className="object-contain mb-10"
                                     />
                                 </div>
                                 <div className="w-60">
@@ -388,9 +405,11 @@ const MainSection = () => {
                             <div key={product.id} className="flex flex-col items-center text-left">
                                 <div className="bg-gradient-to-b from-[#fff7dc] to-[#ffd680] w-60 h-60 flex items-center justify-center rounded-t-lg">
                                     <Image
+                                        width={170}
+                                        height={170}
                                         src={product.image}
                                         alt={product.name}
-                                        className="w-56 h-56 object-contain mb-10"
+                                        className="object-contain mb-10"
                                     />
                                 </div>
                                 <div className="w-60">
@@ -418,7 +437,11 @@ const MainSection = () => {
                             </p>
                         </div>
                         <div className="w-full md:w-1/2 h-64 md:h-auto relative">
-                            <Image src="/images/Water4.png" alt="Top Left" className="w-full h-full object-cover" />
+                            <Image
+                                fill
+                                src="/images/Water4.png"
+                                alt="Top Left"
+                                className="object-cover" />
                             <div className="absolute -top-12 left-6 w-24 h-24 sm:w-36 sm:h-36 bg-[var(--primary-blue)] rounded-full flex flex-col items-center justify-center shadow-xl text-white text-center p-3">
                                 <h3 className="text-2xl sm:text-4xl font-bold">90+</h3>
                                 <p className="text-sm sm:text-md">Quality Tests</p>
@@ -433,8 +456,12 @@ const MainSection = () => {
                                 Punnyadhara branded beverages including our packaged drinking water sells directly to customers through our various points of sale. Our vending machines and vending carts are available at high footfall zones including shopping complexes, open markets, hospitals, shopping malls, colleges & universities, metro station and more.
                             </p>
                         </div>
-                        <div className="w-full md:w-1/2">
-                            <Image src="/images/rightSectionImage1.jpg" alt="Bottom Right" className="w-full h-full object-cover" />
+                        <div className="w-full relative h-96 md:w-1/2 md:h-auto">
+                            <Image
+                                fill
+                                src="/images/rightSectionImage1.jpg"
+                                alt="Bottom Right"
+                                className="object-cover" />
                         </div>
                     </div>
                 </div>
@@ -504,9 +531,11 @@ const MainSection = () => {
                 {/* Left Image */}
                 <div className="md:w-1/4 w-full">
                     <Image
+                        width={576}
+                        height={576}
                         src="/images/Recycle.jpg"
                         alt="Left Visual"
-                        className="h-full w-full object-cover rounded-r-lg"
+                        className="object-cover rounded-r-lg"
                     />
                 </div>
 
@@ -518,19 +547,34 @@ const MainSection = () => {
                     </p>
                     <div className="flex flex-col gap-4 text-left">
                         <div className="flex items-start gap-3">
-                            <Image src="/images/Icon1.svg" alt="" className="mt-1" />
+                            <Image
+                                width={30}
+                                height={30}
+                                src="/images/Icon1.svg"
+                                alt=""
+                                className="mt-1" />
                             <p className="text-gray-700 font-medium">
                                 All our vending carts and machines are equipped with plastic bottle crushing machines. The bottles are crushed and transported to the recycle plant.
                             </p>
                         </div>
                         <div className="flex items-start gap-3">
-                            <Image src="/images/Icon2.svg" alt="" className="mt-1" />
+                            <Image
+                                width={30}
+                                height={30}
+                                src="/images/Icon2.svg"
+                                alt=""
+                                className="mt-1" />
                             <p className="text-gray-700 font-medium">
                                 Punnyadhara also incentives all customers to recycle any and all plastic bottles upto size of one litre through its vending carts and machines.
                             </p>
                         </div>
                         <div className="flex items-start gap-3">
-                            <Image src="/images/Icon3.svg" alt="" className="mt-1" />
+                            <Image
+                                width={30}
+                                height={30}
+                                src="/images/Icon3.svg"
+                                alt=""
+                                className="mt-1" />
                             <p className="text-gray-700 font-medium">
                                 Our company policy is to recycle atleast the same quantity of bottles we sell to our customers.
                             </p>
@@ -541,9 +585,11 @@ const MainSection = () => {
                 {/* Right Image */}
                 <div className="md:w-1/4 w-full flex justify-center sm:justify-end items-center">
                     <Image
+                        width={576}
+                        height={320}
                         src="/images/Recycle2.jpg"
                         alt="Right Visual"
-                        className="w-full h-80 object-cover rounded-l-lg"
+                        className="h-80 object-cover rounded-l-lg"
                     />
                 </div>
             </section>
@@ -554,12 +600,12 @@ const MainSection = () => {
                 <h2 className="text-3xl font-bold text-center mb-10">Our Certifications</h2>
                 <div className="carousel-container mx-auto overflow-hidden">
                     <div className="carousel-track">
-                        <Image src="/images/cert1.webp" alt="Cert 1" className="carousel-item" />
-                        <Image src="/images/cert2.webp" alt="Cert 2" className="carousel-item" />
-                        <Image src="/images/cert3.png" alt="Cert 3" className="carousel-item" />
-                        <Image src="/images/cert4.webp" alt="Cert 4" className="carousel-item" />
-                        <Image src="/images/cert5.png" alt="Cert 5" className="carousel-item" />
-                        <Image src="/images/cert6.png" alt="Cert 6" className="carousel-item" />
+                        <Image width={150} height={100} src="/images/cert1.webp" alt="Cert 1" className="carousel-item" />
+                        <Image width={150} height={100} src="/images/cert2.webp" alt="Cert 2" className="carousel-item" />
+                        <Image width={150} height={100} src="/images/cert3.png" alt="Cert 3" className="carousel-item" />
+                        <Image width={150} height={100} src="/images/cert4.webp" alt="Cert 4" className="carousel-item" />
+                        <Image width={100} height={100} src="/images/cert5.png" alt="Cert 5" className="carousel-item" />
+                        <Image width={100} height={100} src="/images/cert6.png" alt="Cert 6" className="carousel-item" />
                     </div>
                 </div>
             </section>
@@ -605,14 +651,15 @@ const MainSection = () => {
             {/* Last Image section */}
             <section className="relative w-full bg-white py-20">
                 <div className="flex flex-col md:flex-row items-start relative">
-                    <div className="md:w-2/3 w-full relative z-0">
+                    <div className="relative w-full md:w-[1350px] h-[300px] md:h-[500px]">
                         <Image
                             src="/images/Glass-water.jpeg"
                             alt="Illustration"
-                            className="w-full h-[500px] object-cover shadow-2xl"
+                            fill
+                            className="object-cover shadow-2xl"
                         />
                     </div>
-                    <div className="md:w-1/2 w-full flex flex-col gap-6 -ml-0 md:-ml-24 z-10 relative mt-6 md:mt-0 px-4 md:px-0">
+                    <div className="md:w-2/3 w-full flex flex-col gap-6 -ml-0 md:-ml-24 z-10 relative mt-6 md:mt-0 px-4 md:px-0">
                         {/* First Container */}
                         <div className="bg-white shadow-2xl sm:shadow-none rounded-lg p-6 w-full max-w-[90%] mx-auto mt-3.5">
                             <h2 className="font-semibold mb-4">Become our supply chain partner?</h2>
